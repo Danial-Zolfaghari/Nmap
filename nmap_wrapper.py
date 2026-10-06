@@ -807,13 +807,16 @@ def is_valid_network(net: str) -> bool:
 
 
 def is_valid_hostname(hostname: str) -> bool:
-    """Check if string is a valid hostname"""
-    if len(hostname) > 255:
+    """Check if string is a valid hostname."""
+    hostname = (hostname or "").strip()
+    if not hostname or len(hostname) > 255:
         return False
-    if hostname[-1] == ".":
+    if hostname.endswith("."):
         hostname = hostname[:-1]
+    if not hostname:
+        return False
     allowed = re.compile(r"^[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?(\.[a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?)*$")
-    return allowed.match(hostname) is not None
+    return allowed.fullmatch(hostname) is not None
 
 
 class DNSResolver:
