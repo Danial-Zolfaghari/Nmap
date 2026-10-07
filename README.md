@@ -12,6 +12,12 @@
   <img alt="Windows" src="https://img.shields.io/badge/Windows-supported-0078D4?logo=windows11&logoColor=white">
   <img alt="macOS" src="https://img.shields.io/badge/macOS-supported-000000?logo=apple&logoColor=white">
 </p>
+<p align="center">
+  <a href="https://github.com/Danial-Zolfaghari/Nmap/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/Danial-Zolfaghari/Nmap/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/Danial-Zolfaghari/Nmap/releases"><img alt="Release" src="https://img.shields.io/github/v/release/Danial-Zolfaghari/Nmap?display_name=tag&sort=semver"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/Danial-Zolfaghari/Nmap"></a>
+</p>
+
 
 ---
 
